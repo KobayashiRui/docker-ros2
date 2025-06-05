@@ -1,8 +1,11 @@
 version: '3'
 
 services:
-  ros2-webtop:
-    image: webtop-ros2
+  ros2-jazzy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ros2-webtop
     security_opt:
       - seccomp:unconfined #optional
     environment:
