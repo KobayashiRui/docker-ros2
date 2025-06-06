@@ -9,7 +9,7 @@ ARG INSTALL_PACKAGE=desktop #ros-base に変更可能
 # 1. 基本パッケージと universe リポジトリ追加
 # ---------------------------
 RUN apt-get update && \
-    apt-get install -y curl lsb-release software-properties-common && \
+    apt-get install -y git curl lsb-release software-properties-common && \
     add-apt-repository universe
 
 # ---------------------------
