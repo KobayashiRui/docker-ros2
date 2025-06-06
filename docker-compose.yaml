@@ -1,11 +1,12 @@
+name: ros2-jazzy
 version: '3'
 
 services:
-  ros2-jazzy:
+  desktop:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ros2-webtop
+    image: ros2-webtop-jazzy
     security_opt:
       - seccomp:unconfined #optional
     environment:
